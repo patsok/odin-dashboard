@@ -12,50 +12,41 @@
 
 <body>
     <div class="sidebar">
-        <div class="logo">Dashboard</div>
+        <div class="logo"><img src="img/dashboard.svg" alt="dashboard logo">Dashboard</div>
         <div class="menu">
             <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li><img src="img/home.svg" alt="home">Home</li>
+                <li><img src="img/profile.svg" alt="home">Profile</li>
+                <li><img src="img/messages.svg" alt="home">Messages</li>
+                <li><img src="img/history.svg" alt="home">History</li>
+                <li><img src="img/tasks.svg" alt="home">Tasks</li>
+                <li><img src="img/community.svg" alt="home">Communities</li>
+                <li><img src="img/settings.svg" alt="home">Settings</li>
+                <li><img src="img/support.svg" alt="home">Support</li>
+                <li><img src="img/privacy.svg" alt="home">Privacy</li>
             </ul>
         </div>
     </div>
     <div class="header">
-        <div class="taskbar">
-            <div class="taskbar-left">
-                <input type="search" name="search" id="search">
-            </div>
-            <div class="taskbar-right">
-                <a href=""><img src="" alt="notifications"></a>
-                <div class="avatar">AV</div>
-                <div class="profile">Falco</div>
-            </div>
+        <div class="search-bar">
+            <input type="search" name="search" id="search">
+            <img src="img/search.svg" alt="search">
         </div>
-        <div class="account">
-            <div class="account-left">
-                <div class="avatar">AV</div>
-                <div class="avatar-info">
-                    <p>Hello there,</p>
-                    <div class="div">Falco</div>
-                </div>
-            </div>
-            <div class="account-right">
-                <button type="button" id="new" class="account-button">New</button>
-                <button type="button" id="upload" class="account-button">Upload</button>
-                <button type="button" id="share" class="account-button">Share</button>
-            </div>
+        <div class="user-info">
+            <div class="hamburger">|||</div>
+            <img src="img/alert.svg" alt="notifications">
+            <div class="avatar"><img src="img/avatar.png" alt="avatar"></div>
+            <div class="profile">Falco</div>
         </div>
     </div>
     <div class="content">
         <div class="projects-container">
-            <h1>My projects</h1>
+            <div class="nav-bar">
+                <h1>My projects</h1>
+                <div class="nav">
+                    <button type="button" id="new" class="account-button">New</button>
+                </div>
+            </div>
             <div class="projects">
                 <div class="project-card">
                     <div class="project-content">
@@ -63,9 +54,9 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim ipsum sit amet iaculis convallis. Fusce faucibus lorem vitae massa ullamcorper scelerisque. Nulla facilisi. Proin et lacus et velit euismod elementum.</p>
                     </div>
                     <div class="project-buttons">
-                        <img src="" alt="star">
-                        <img src="" alt="observe">
-                        <img src="" alt="share">
+                        <img src="img/star.svg" alt="star">
+                        <img src="img/watch.svg" alt="observe">
+                        <img src="img/share.svg" alt="share">
                     </div>
                 </div>
                 <div class="project-card">
@@ -74,9 +65,9 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim ipsum sit amet iaculis convallis. Fusce faucibus lorem vitae massa ullamcorper scelerisque. Nulla facilisi. Proin et lacus et velit euismod elementum.</p>
                     </div>
                     <div class="project-buttons">
-                        <img src="" alt="star">
-                        <img src="" alt="observe">
-                        <img src="" alt="share">
+                        <img src="img/star.svg" alt="star">
+                        <img src="img/watch.svg" alt="observe">
+                        <img src="img/share.svg" alt="share">
                     </div>
                 </div>
                 <div class="project-card">
@@ -85,9 +76,9 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim ipsum sit amet iaculis convallis. Fusce faucibus lorem vitae massa ullamcorper scelerisque. Nulla facilisi. Proin et lacus et velit euismod elementum.</p>
                     </div>
                     <div class="project-buttons">
-                        <img src="" alt="star">star
-                        <img src="" alt="observe">observe
-                        <img src="" alt="share">share
+                        <img src="img/star.svg" alt="star">
+                        <img src="img/watch.svg" alt="observe">
+                        <img src="img/share.svg" alt="share">
                     </div>
                 </div>
                 <div class="project-card">
@@ -96,9 +87,9 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim ipsum sit amet iaculis convallis. Fusce faucibus lorem vitae massa ullamcorper scelerisque. Nulla facilisi. Proin et lacus et velit euismod elementum.</p>
                     </div>
                     <div class="project-buttons">
-                        <img src="" alt="star">star
-                        <img src="" alt="observe">observe
-                        <img src="" alt="share">share
+                        <img src="img/star.svg" alt="star">
+                        <img src="img/watch.svg" alt="observe">
+                        <img src="img/share.svg" alt="share">
                     </div>
                 </div>
             </div>
@@ -126,31 +117,31 @@
                 <h1>Trending</h1>
                 <div class="container">
                     <div class="trending-card">
-                        <img src="" alt="avatar">
+                        <img src="img/avatar.png" alt="avatar">
                         <div class="trending-info">
                             <p class="nickname">@falco</p>
-                            <p>Lorem ipsum dolor</p>
+                            <p>Javascript/Web Developer</p>
                         </div>
                     </div>
                     <div class="trending-card">
-                        <img src="" alt="avatar">
+                        <img src="img/avatar.png" alt="avatar">
                         <div class="trending-info">
                             <p class="nickname">@falco</p>
-                            <p>Lorem ipsum dolor</p>
+                            <p>Graphic Designer</p>
                         </div>
                     </div>
                     <div class="trending-card">
-                        <img src="" alt="avatar">
+                        <img src="img/avatar.png" alt="avatar">
                         <div class="trending-info">
                             <p class="nickname">@falco</p>
-                            <p>Lorem ipsum dolor</p>
+                            <p>Your future asset</p>
                         </div>
                     </div>
                     <div class="trending-card">
-                        <img src="" alt="avatar">
+                        <img src="img/avatar.png" alt="avatar">
                         <div class="trending-info">
                             <p class="nickname">@falco</p>
-                            <p>Lorem ipsum dolor</p>
+                            <p>Looking for a junior position</p>
                         </div>
                     </div>
                 </div>
