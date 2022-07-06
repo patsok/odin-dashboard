@@ -98,3 +98,8 @@ closeButton.addEventListener('click', () => {
     closeButton.classList.remove('visible');
     sidebar.classList.remove('open');
 })
+
+let library = document.querySelector('.project-card:first-of-type')
+library.addEventListener('click', () => {
+    window.open('odin-library/index.html', '_blank').focus();
+})
