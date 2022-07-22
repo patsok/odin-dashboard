@@ -27,9 +27,9 @@ Project inspired by [The Odin Project](https://www.theodinproject.com/) Javascri
 
 - Drawing by hovering canvas
 - Three different drawing modes
--- Color mode - pick whatever color you want
--- Rainbow mode - color is randomized
--- Grey mode - 10% grey for each field on canvas
+    - Color mode - pick whatever color you want
+    - Rainbow mode - color is randomized
+    - Grey mode - 10% grey for each field on canvas
 - Eraser mode 
 - Clearing whole canvas
 - Changing canvas size from 1x1 to 100x100

@@ -44,5 +44,5 @@ Project inspired by [The Odin Project](https://www.theodinproject.com/) Full Sta
 
 - [JS Library](/odin-library)
 - [Etch-a-sketch](/odin-etch)
-- [Rock, paper, scissors, lizard, spock](/odin-rock-paper-scissors)
-- [First landing page from scratch](/odin-landingpage)
+- [Rock, paper, scissors, lizard, spock](/odin-rps)
+- [First landing page from scratch](/odin-landing-page)
