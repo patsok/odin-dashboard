@@ -110,10 +110,10 @@ projectCards[1].addEventListener('click', () => {
     window.open('odin-etch/index.html', '_blank').focus();
 })
 projectCards[2].addEventListener('click', () => {
-    window.open('odin-rock-paper-scissors/index.html', '_blank').focus();
+    window.open('odin-rps/index.html', '_blank').focus();
 })
 projectCards[3].addEventListener('click', () => {
-    window.open('odin-landingpage/index.html', '_blank').focus();
+    window.open('odin-landing-page/index.html', '_blank').focus();
 })
 
 let annoCards = document.querySelectorAll('.anno-card')
