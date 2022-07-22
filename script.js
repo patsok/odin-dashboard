@@ -30,7 +30,10 @@ trendingCards.forEach((card, index) => {
 let projectButtons = document.querySelectorAll('.project-buttons img');
 
 projectButtons.forEach((button, index) => {
-    button.addEventListener('click', () => { changeIcon(button, index) })
+    button.addEventListener('click', (e) => {
+        e.stopPropagation();
+        changeIcon(button, index)
+    })
 });
 
 function changeIcon(button, index) {
@@ -99,7 +102,29 @@ closeButton.addEventListener('click', () => {
     sidebar.classList.remove('open');
 })
 
-let library = document.querySelector('.project-card:first-of-type')
-library.addEventListener('click', () => {
+let projectCards = document.querySelectorAll('.project-card')
+projectCards[0].addEventListener('click', () => {
     window.open('odin-library/index.html', '_blank').focus();
+})
+projectCards[1].addEventListener('click', () => {
+    window.open('odin-etch/index.html', '_blank').focus();
+})
+projectCards[2].addEventListener('click', () => {
+    window.open('odin-rock-paper-scissors/index.html', '_blank').focus();
+})
+projectCards[3].addEventListener('click', () => {
+    window.open('odin-landingpage/index.html', '_blank').focus();
+})
+
+let annoCards = document.querySelectorAll('.anno-card')
+annoCards[0].addEventListener('click', () => {
+    window.open('https://github.com/patsok/odin-dashboard', '_blank').focus();
+})
+annoCards[1].addEventListener('click', () => {
+    window.open('https://github.com/patsok/code-wars', '_blank').focus();
+})
+annoCards[2].addEventListener('click', () => {
+    alert('You broke matrix. Are you satisfied?');
+    alert('I though you would be better...');
+    alert('Shame on you!');
 })
