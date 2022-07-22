@@ -1,0 +1,143 @@
+:root {
+    --main-color: #222222;
+    --secondary-color: #fff;
+    --easy-color: #41c483;
+    --hard-color: #ce2020;
+    --rock-color: #ff8080;
+    --paper-color: #ffdd55;
+    --scissors-color: #e580ff;
+    --lizard-color: #87de87;
+    --spock-color: #80b3ff;
+    --reset-color: #1ead91;
+    --modes-color: #862fe0;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    font-size: clamp(2rem, 5vw, 3rem);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.header {
+    margin: auto 10rem;
+}
+
+.gameContainer,
+.textContainers {
+    margin: auto 5rem;
+}
+
+.score {
+    padding: 1rem;
+}
+
+.difficulty {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+    padding-top: 3rem;
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon {
+    border-radius: 10rem;
+}
+
+#rock .icon:hover {
+    -webkit-box-shadow: 0px 0px 22px -1px var(--rock-color);
+    -moz-box-shadow: 0px 0px 22px -1px var(--rock-color);
+    box-shadow: 0px 0px 22px -1px var(--rock-color);
+}
+
+#paper .icon:hover {
+    -webkit-box-shadow: 0px 0px 22px -1px var(--paper-color);
+    -moz-box-shadow: 0px 0px 22px -1px var(--paper-color);
+    box-shadow: 0px 0px 22px -1px var(--paper-color);
+}
+
+#scissors .icon:hover {
+    -webkit-box-shadow: 0px 0px 22px -1px var(--scissors-color);
+    -moz-box-shadow: 0px 0px 22px -1px var(--scissors-color);
+    box-shadow: 0px 0px 22px -1px var(--scissors-color);
+}
+
+#lizard .icon:hover {
+    -webkit-box-shadow: 0px 0px 22px -1px var(--lizard-color);
+    -moz-box-shadow: 0px 0px 22px -1px var(--lizard-color);
+    box-shadow: 0px 0px 22px -1px var(--lizard-color);
+}
+
+#spock .icon:hover {
+    -webkit-box-shadow: 0px 0px 22px -1px var(--spock-color);
+    -moz-box-shadow: 0px 0px 22px -1px var(--spock-color);
+    box-shadow: 0px 0px 22px -1px var(--spock-color);
+}
+
+.reset {
+    margin-top: 2rem;
+}
+
+.reset:hover {
+    border-radius: 10rem;
+    -webkit-box-shadow: 0px 0px 22px -1px var(--reset-color);
+    -moz-box-shadow: 0px 0px 22px -1px var(--reset-color);
+    box-shadow: 0px 0px 22px -1px var(--reset-color);
+}
+
+#easy img:hover {
+    border-radius: 10rem;
+    -webkit-box-shadow: 0px 0px 22px -1px var(--easy-color);
+    -moz-box-shadow: 0px 0px 22px -1px var(--easy-color);
+    box-shadow: 0px 0px 22px -1px var(--easy-color);
+}
+
+#hard img:hover {
+    border-radius: 10rem;
+    -webkit-box-shadow: 0px 0px 22px -1px var(--hard-color);
+    -moz-box-shadow: 0px 0px 22px -1px var(--hard-color);
+    box-shadow: 0px 0px 22px -1px var(--hard-color);
+}
+
+.modes:hover {
+    border-radius: 10rem;
+    -webkit-box-shadow: 0px 0px 22px -1px var(--modes-color);
+    -moz-box-shadow: 0px 0px 22px -1px var(--modes-color);
+    box-shadow: 0px 0px 22px -1px var(--modes-color);
+}
+
+.resetButtons img {
+    margin-right: 2rem;
+}
+
+.footer {
+    background-color: #464646;
+    padding: 1rem 0;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+    </div>
+    <div class="container">
+        <h1>Etch-a-sketch</h1>
+        <div class="mainContainer">
+            <div class="buttonContainer">
+                <input id="colorPicker" type="color" value="#615f5f">
+                <button class="colorMode modeOn">Color Mode</button>
+                <button class="rainbowMode">Rainbow Mode</button>
+                <button class="greyMode">Grey Mode</button>
+                <button class="eraserMode">Eraser</button>
+                <button class="clearButton">Clear</button>
+            </div>
+            <div class="gameContainer">
+                <div class="grid"></div>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
+                    <span id="rangeValue"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="author">Made with <img src="./img/heart.png" width="15rem"> by <a href="https://github.com/patsok" target="_blank">Falco</a></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://127.0.0.1:5500/JS/index_formsIIH.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Speaker Submission</title>
+    <link rel="stylesheet" href="./Speaker Submission_files/styles_formsIIH.css">
+</head>
+
+<body>
+    <header class="speaker-form-header">
+        <h1>Speaker Submission</h1>
+        <p><em>Want to speak at our fake conference? Fill out
+        this form.</em></p>
+    </header>
+    <form action="http://127.0.0.1:5500/JS/index_formsIIH.html" method="get" class="speaker-form">
+        <ul>
+            <div class="form-row">
+                <label for="name">Name</label>
+                <input type="text" name="user_name" id="name">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" name="user_email" id="email" placeholder="joe@example.pl">
+            </div>
+            <label>Type of Talk</label>
+            <input type="radio" name="typeOfTalk" id="mainStage">
+            <label for="mainStage">Main Stage</label>
+            <input type="radio" name="typeOfTalk" id="workshop">
+            <label for="workshop">Workshop</label>
+            <label for="tshirt">T-Shirt Size</label>
+            <select id="tshirt">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <label for="abstract">Abstract</label>
+            <textarea id="abstract"></textarea>
+            <div class="describe">Describe your talk in 500 words or less</div>
+            <input type="checkbox" name="available" id="available">
+            <label for="available">I'm actually available the date of the talk</label>
+            <button type="submit">Sumbit</button>
+        </ul>
+
+    </form>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body><auto-scroll></auto-scroll></html>

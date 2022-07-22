@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Ubuntu, 'Helvetica Neue', sans-serif;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 1300px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    padding: 80px 50px;
+}
+
+.nav {
+    background: #d81c23;
+    height: 72px;
+}
+
+.nav .container {
+    padding: 0 50px;
+}
+
+.logo {
+    width: 130px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li>a:hover {
+    padding-bottom: 6px;
+    border-bottom: 2px white solid;
+}
+
+.header {
+    background-color: black;
+    color: white;
+}
+
+.header .container {
+    background-image: url(./images/G2_header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 600px;
+    justify-content: flex-start;
+    max-width: 1300px;
+    padding: 50px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header_title {
+    font-size: 100%;
+    max-width: 500px;
+}
+
+.header_title p {
+    padding-top: 10px;
+    font-size: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .header_title {
+        font-size: 1.2vw;
+        max-width: 500px;
+    }
+    .header_title p {
+        padding-top: 10px;
+        font-size: 1.2vw;
+    }
+    .header .container {
+        height: 400px;
+    }
+}
+
+.roster {
+    background: black;
+    color: white;
+}
+
+.roster .container {
+    flex-direction: column;
+    border-bottom: 1px rgba(255, 255, 255, .65) solid;
+}
+
+h2 {
+    padding-bottom: 50px;
+    font-size: 48px;
+}
+
+.players {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+}
+
+.card {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #d81c23;
+    border-radius: 2px;
+    background-image: url("./images/g2-logo-white-25.svg");
+    background-position: 10% 110%;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    background-size: 150%;
+    -webkit-box-shadow: 0px 0px 22px -3px #d81c23;
+    -moz-box-shadow: 0px 0px 22px -3px #d81c23;
+    box-shadow: 0px 0px 22px -3px #d81c23;
+}
+
+.card:hover {
+    background-color: rgb(19, 19, 19);
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(216, 28, 35, 1);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(216, 28, 35, 1);
+    box-shadow: 0px 0px 22px 0px rgba(216, 28, 35, 1);
+}
+
+.player-data {
+    display: flex;
+    padding-top: 10px;
+    justify-content: flex-start;
+    border-top: 1px solid #d81c23;
+}
+
+.player-names {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+.player-nick {
+    font-size: 24px;
+}
+
+.player-name {
+    font-size: 12px;
+}
+
+.quote {
+    /*     background-color: #d81c23; */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(158, 20, 26, 1) 85%, rgba(216, 28, 35, 1) 100%);
+    color: white;
+}
+
+.quote .container {
+    flex-direction: column;
+}
+
+.phreak {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.movie iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    font-style: italic;
+    font-size: 48px;
+    text-align: center;
+}
+
+.text-author {
+    align-self: flex-end;
+    padding-bottom: 30px;
+}
+
+.merch {
+    background: #d81c23;
+    color: white;
+    padding: 50px 50px 100px 50px;
+}
+
+.merch .container {
+    background-color: black;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 50px;
+    gap: 100px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.button {
+    padding: 10px 50px;
+    margin: 20px 0px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: red;
+    border: 2px solid #d81c23;
+    background-color: black;
+}
+
+.button:hover {
+    color: white;
+    border: 2px solid #d81c23;
+    background-color: #d81c23;
+}
+
+.button.normal {
+    padding: 15px 80px;
+    font-size: 18px;
+}
+
+.button.reversed {
+    padding: 20px 100px;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.author img {
+    height: 15px;
+    padding: 0 1px;
+}

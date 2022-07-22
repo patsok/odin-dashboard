@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper, scissors</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="empty">
+    </div>
+    <div class="content">
+        <div class="score"></div>
+        <div class="header">The machines are ready to enslave the human world!</br> You are the chosen one who can defeat them.<br>There is only one catch.<br>You must win 5 games of rock, paper, scissors! <br>Will you choose easy or hard mode?
+            <div class="difficulty">
+                <div class="button" id="easy"><img src="./img/easy.png" alt="Reset" height="150px" width="150px"></div>
+                <div class="button" id="hard"><img src="./img/hard.png" alt="Reset" height="150px" width="150px"></div>
+            </div>
+        </div>
+        <div class="gameContainter">
+            <div class="icons hidden">
+                <div id="rock">
+                    <img src="./img/rock.png" alt="Rock" height="150px" width="150px" class="icon">
+                </div>
+                <div id="paper">
+                    <img src="./img/paper.png" alt="Paper" height="150px" width="150px" class="icon">
+                </div>
+                <div id="scissors">
+                    <img src="./img/scissors.png" alt="Scissors" height="150px" width="150px" class="icon">
+                </div>
+                <div id="lizard">
+                    <img src="./img/lizard.png" alt="Lizard" height="150px" width="150px" class="icon">
+                </div>
+                <div id="spock">
+                    <img src="./img/spock.png" alt="Spock" height="150px" width="150px" class="icon">
+                </div>
+            </div>
+            <div class="textContainers">
+                <div class="result"></div>
+                <div class="endMessage"></div>
+            </div>
+            <div class="resetButtons hidden"><img src="./img/reset.png" alt="Reset" height="150px" width="150px" class="reset">
+                <img src="./img/modes.png" alt="Modes" height="150px" width="150px" class="modes"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="author">Made with <img src="./img/heart.png" width="15rem"> by <a href="https://github.com/patsok" target="_blank">Falco</a></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
