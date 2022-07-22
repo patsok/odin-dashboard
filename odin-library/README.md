@@ -4,7 +4,7 @@ Library project - learning how to manipulate DOM & Objects.
 Project inspired by [The Odin Project](https://www.theodinproject.com/) Full Stack Javascript Course. 
 
 <p align="center">
-<img src='https://i.imgur.com/f7jLg3q.png' /></p>
+<img src='https://i.imgur.com/eN9wq6J.png' /></p>
 
 ## Live preview
 
@@ -38,4 +38,4 @@ Project inspired by [The Odin Project](https://www.theodinproject.com/) Full Sta
 
 ## Back to Dashboard
 
-- [Dashboard](../)
+- [Dashboard](../odin-dashboard)
