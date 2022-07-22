@@ -35,7 +35,6 @@ Project inspired by [The Odin Project](https://www.theodinproject.com/) Full Sta
 
 - Animations
 - Update read property to distinguish readonly from rw
+<br>
 
-## Back to Dashboard
-
-- [Dashboard](../odin-dashboard)
+[Back to Dashboard](../../../)
