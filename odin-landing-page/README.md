@@ -2,10 +2,11 @@
 First landing page from scratch using CSS Flexbox. Welcome all G2 fans to join #G2ARMY! Quick brief of what fanbase website can look with simple setup.
 
 Project inspired by [The Odin Project](https://www.theodinproject.com/) Javascript Foundations course. 
-Images thanks to official [G2 Esports Website](https://g2esports.com/) and [Lolesports] https://lolesports.com/
+<br>
+Images thanks to official [G2 Esports Website](https://g2esports.com/) and [Lolesports](https://lolesports.com/)
 
 <p align="center">
-<img src='https://media.giphy.com/media/wVlDY6dx2xxY1uovRE/giphy.gif' alt='G2 landing page image' /></p>
+<img src='https://media4.giphy.com/media/dL8zBpJ3yW9OPsa2st/giphy.gif' alt='G2 landing page image' /></p>
 
 ## Live preview
 

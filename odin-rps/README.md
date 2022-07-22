@@ -5,7 +5,7 @@ inspired by the show The Big Bang Theory - added two new choices (Lizard and Spo
 Project inspired by [The Odin Project](https://www.theodinproject.com/) Javascript Foundations course. 
 
 <p align="center">
-<img src='https://media.giphy.com/media/wVlDY6dx2xxY1uovRE/giphy.gif' alt='Rock paper scissors project image' /></p>
+<img src='https://media.giphy.com/media/21wziWqRVbQDcNFyhe/giphy.gif' alt='Rock paper scissors project image' /></p>
 
 ## Live preview
 
