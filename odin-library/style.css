@@ -177,9 +177,10 @@ table {
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
+    margin-bottom: 2rem;
 }
 
-table img:first-of-type {
+table img:not(:last-of-type) {
     margin-right: 20px;
 }
 
@@ -217,7 +218,7 @@ table input {
 
 @media only screen and (max-width:600px) {
     body {
-        grid-template-rows: 1fr;
+        grid-template-rows: auto auto 50px;
     }
     .header {
         padding-top: 1rem;
@@ -254,7 +255,7 @@ table input {
         font-size: 0.8rem;
         align-self: end;
     }
-    table img:first-of-type {
+    table img:not(:last-of-type) {
         margin-right: 5px;
     }
     tbody td:last-of-type {
