@@ -23,6 +23,9 @@ Project inspired by [The Odin Project](https://www.theodinproject.com/) Full Sta
 - Clamp function
 - Light/dark mode
 
+Edit [23/07/2022]
+- ES6 Class syntax
+
 ## Project features
 
 - Listing all books
@@ -34,7 +37,7 @@ Project inspired by [The Odin Project](https://www.theodinproject.com/) Full Sta
 ## To do
 
 - Animations
-- Update read property to distinguish readonly from rw
+- ~~Update read property to distinguish readonly~~ 
 <br>
 
 [Back to Dashboard](../../../)
