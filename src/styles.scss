@@ -1,0 +1,130 @@
+@use "sass:math";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+$font-stack: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+$accent-color: #A6283D;
+$border: 2px solid $accent-color;
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(./img/bgrd.jpg);
+    background-size:1920px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: $font-stack;
+    color: white;
+}
+
+#content{
+    display: grid;
+    grid-template-rows: 100px 1fr 50px;
+    min-height: 100vh;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-bottom: $border;
+
+    ul{
+        display: flex;
+        list-style: none;
+        gap: clamp(25px,5vw,90px);
+        li{
+            cursor: pointer;
+            padding: 10px;
+
+            img{
+                width: 30px;
+            }
+            &:hover{
+                border-bottom: $border;
+                padding-bottom: 8px;
+            }
+            &:active{
+                border-bottom: $border;
+                padding-bottom: 8px;
+                color: $accent-color;
+            }
+        }
+
+    }
+}
+
+.container{
+    display: grid;
+    height:100%;
+    grid-template-rows: 200px 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 32px;
+    background-color: rgba($color: #070707, $alpha: 0.9);
+    img{
+        padding: 32px 60px;
+        border-bottom: $border;
+        height: 180px;
+    }
+    .desc{
+        width: 40ch;
+        text-align: center;
+        h1{
+            padding-top: 32px;
+        }
+        p{
+            font-size: 24px;
+            padding: 64px 0;
+
+            &.ing{
+                padding: 16px 0;
+            }
+        }
+        a{
+            padding: 16px 32px;
+            background-color: $accent-color;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba($color: $accent-color, $alpha: .66);
+            }
+            &:active {
+                background-color: rgba($color: #720d1e, $alpha: 1);
+            }
+        }
+    }
+}
+
+.footer {
+    border-top: $border;
+    height: 50px;
+    color: white;
+    padding: 1rem 0;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+
+    .heart{
+        background-image: url(./img/heart.png);
+        background-size: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0 12px;
+    }
+}
