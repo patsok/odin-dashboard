@@ -116,7 +116,7 @@ projectCards[3].addEventListener('click', () => {
     window.open('odin-landing-page/index.html', '_blank').focus();
 })
 projectCards[4].addEventListener('click', () => {
-    window.open('odin-restaurant-page/dist/index.html', '_blank').focus();
+    window.open('odin-restaurant/dist/index.html', '_blank').focus();
 })
 
 let annoCards = document.querySelectorAll('.anno-card')
